@@ -24,8 +24,36 @@ Ok，这是它的基本概念，接下来我们来介绍下它的基本模型
 
 ![基础模块](/makar-web/public/picture/basic-module.png)
 上图中有两个模块（青色和紫色），他们分别是function和object，我们在创建函数的时候实际创建的是青色的function，紫色的object是JavaScript为这个函数创建一个与函数相关联的特殊对象
-同样，我们可以看见图上有prototype、constructor、__proto__三个属性，你可以把他们理解为有特殊指向的指针，
+###### 这个对象是用于存储该函数创建的对象实例的共享属性和方法的
+同样，我们可以看见图上有prototype、constructor、__proto__三个属性，你可以把他们理解为有特殊指向的指针，function和object互相连接，是不是很像数据结构中的链表，下面这个例子可以很好的帮你理解这个概念
+1. 构造函数
+```js
+function Person(name) {
+  this.name = name;
+}
+```
+>Person 是一个构造函数。
+>当使用 new Person('Alice') 创建实例时，构造函数会被调用。
+>this.name = name;: 这行代码将传入的 name 参数赋值给新创建的对象的 name 属性。this 代表当前正在被创建的对象实例。
+2. 原型方法
+```js
+Person.prototype.sayHello = function() {
+  console.log('Hello, ' + this.name);
+};
+```
+>Person.prototype: 这是 Person 函数的原型对象。所有 Person 的实例都会继承这个原型对象上的属性和方法。
+>sayHello 方法: 这是定义在 Person.prototype 上的方法。它可以被 Person 的所有实例调用。
+>this.name: 在这个方法中，this 代表调用 sayHello 方法的 Person 实例。因此，this.name 会访问到实例的 name 属性。
+3. 创建实例并调用方法
+```js
+const person1 = new Person('Alice');
+person1.sayHello(); // 输出: Hello, Alice
+```
+>new Person('Alice'): 这行代码创建了一个新的 Person 实例。Person 构造函数会被调用，将 name 属性设置为 'Alice'。
+>person1.sayHello(): 这行代码调用了 person1 实例上的 sayHello 方法。由于 sayHello 方法定义在 Person.prototype 上，因此它可以被 >person1 调用。
+>sayHello 方法: 执行时会输出 'Hello, Alice'，因为 this.name 是 'Alice'。
 ### 基础函数模型
+
 ### NULL
 ## 继承和属性共享
 ## 构造函数和实例化
