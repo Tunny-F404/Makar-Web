@@ -11,7 +11,7 @@ const router = createRouter({
         {
           path: '/js/prototype-link',
           name: 'prototype-link',
-          component:() => import('@/views/Js/PrototypeLink.vue'),
+          component:() => import('@/views/js/PrototypeLink.vue'),
         },
         {
           path: '/css/center-css',
