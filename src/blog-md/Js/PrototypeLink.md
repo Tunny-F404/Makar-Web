@@ -53,8 +53,79 @@ person1.sayHello(); // 输出: Hello, Alice
 >person1.sayHello(): 这行代码调用了 person1 实例上的 sayHello 方法。由于 sayHello 方法定义在 Person.prototype 上，因此它可以被 >person1 调用。
 >sayHello 方法: 执行时会输出 'Hello, Alice'，因为 this.name 是 'Alice'。
 ### 基础函数模型
+上面已经说了函数的创建，下面来说说在函数创建之前会发生什么，在你运行一个项目的时候，JavaScript会创建很多个内置构造函数，其中就有`function function()`和`function Object`，当然，这两个内置的构造函数也是有自己的对象的，如下图：
+![基础函数模块](/makar-web/public/picture/basic-module-two.png)
+### __proto__
+我们已经了解了原型链的各个模块了，接下来让我们把它连起来吧，如下图：
+![原型链构造图1](/makar-web/public/picture/prototype-%20line-one.png)
+上图很明显的能看出各个模块、函数之间的关系，如果说prototype和constructor是连接函数和其对象的属性（指针）的话，那__proto__就是连接各个函数模块之间的属性（指针）
+###### 当你访问一个对象的属性时，JavaScript 引擎首先检查对象本身是否具有该属性。如果对象本身没有这个属性，JavaScript 引擎会查找对象的原型，如果原型对象上也没有该属性，JavaScript 引擎会继续查找原型的原型，直到找到属性或到达原型链的末尾（即原型为 null）。
+下面这个例子可以很好的帮你理解这个概念：
+```js
+const parent = {
+  name: 'Parent',
+  greet() {
+    console.log('Hello from ' + this.name);
+  }
+};
 
-### NULL
+const child = {
+  name: 'Child'
+};
+
+// 设置 child 的原型为 parent
+child.__proto__ = parent;
+
+console.log(child.name); // 输出: Child
+child.greet(); // 输出: Hello from Child
+
+// 访问 parent 的属性
+console.log(child.__proto__.name); // 输出: Parent
+```
 ## 继承和属性共享
+继承是对象间通过原型链继承属性和方法的机制。通过继承，一个对象可以访问另一个对象的属性和方法。
+这一段直接用代码来展示会更加直观：
+```js
+// 定义一个父类对象
+const Animal = {
+  name: 'Animal',
+  eat() {
+    console.log(`${this.name} is eating.`);
+  }
+};
+
+// 创建一个子类对象，继承自 Animal
+const Dog = Object.create(Animal);
+Dog.name = 'Dog';
+Dog.bark = function() {
+  console.log('Woof!');
+};
+
+console.log(Dog.name); // 输出: Dog
+Dog.eat(); // 输出: Dog is eating.
+Dog.bark(); // 输出: Woof!
+```
+在这个例子中，Dog 对象通过 Object.create(Animal) 继承了 Animal 对象的属性和方法。因此，Dog 可以访问 Animal 的 eat 方法，同时还定义了自己的 bark 方法。
 ## 构造函数和实例化
-7.24------未完待续···
+![原型链全图](/makar-web/public/picture/prototype-line-all.png)
+构造函数是一个特殊的函数，用于创建和初始化对象。实例化是通过构造函数创建对象的过程。在 JavaScript 中，构造函数通常以大写字母开头，并通过 new 关键字来调用。
+（大白话来说就是new一个函数，并将它的__proto__属性（指针）指向被new的那个函数的对象）
+下面是一个实例，会帮你更好的理解这个概念：
+```js
+// 定义一个构造函数
+function Animal(name) {
+  this.name = name;
+}
+
+// 添加方法到 Animal 的原型
+Animal.prototype.eat = function() {
+  console.log(`${this.name} is eating.`);
+};
+
+// 创建一个实例
+const dog = new Animal('Dog');
+
+console.log(dog.name); // 输出: Dog
+dog.eat(); // 输出: Dog is eating.
+```
+在这个例子中，Animal 是一个构造函数，用于创建具有 name 属性的对象。Animal.prototype 上定义的 eat 方法可以被所有实例共享。

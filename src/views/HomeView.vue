@@ -1,10 +1,57 @@
 <template>
   <div id="app">
     <nav>
-      <RouterLink to="/">home</RouterLink>
-      <RouterLink to="/js/prototype-link">link</RouterLink>
-      <RouterLink to="/css/center-css">center-css</RouterLink>
-      <RouterLink to="/text">text</RouterLink>
+      
+      <el-row class="tac">
+        <el-col :span="24">
+          <h3 class="mb-2">
+            <RouterLink to="/">home</RouterLink>
+          </h3>
+          <el-menu
+            default-active="2"
+            class="el-menu-vertical-demo"
+            @open="handleOpen"
+            @close="handleClose"
+          >
+          <!-- HTML菜单 -->
+            <el-sub-menu index="1">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>HTML</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="1-1">
+                  <p>施工中···</p>
+                </el-menu-item>
+              </el-menu-item-group>
+            </el-sub-menu>
+            <!-- CSS菜单 -->
+            <el-sub-menu index="2">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>CSS</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="2-1">
+                  <p>施工中···</p>
+                </el-menu-item>
+              </el-menu-item-group>
+            </el-sub-menu>
+            <!-- JS菜单 -->
+            <el-sub-menu index="3">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>JavaScript</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="3-1">
+                  <RouterLink to="/js/prototype-link">原型链</RouterLink>
+                </el-menu-item>
+              </el-menu-item-group>
+            </el-sub-menu>
+          </el-menu>
+        </el-col>
+      </el-row>
     </nav>
     <main>
       <RouterView />
@@ -14,26 +61,33 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { RouterLink,RouterView } from 'vue-router';
 
+const handleOpen = (key: string, keyPath: string[]) => {
+  console.log(key, keyPath)
+};
+const handleClose = (key: string, keyPath: string[]) => {
+  console.log(key, keyPath)
+};
 </script>
 
 <style scoped>
 nav {
-  width: 100%;
-  height: 100px;
+  width: 300rpx;
   border: 1px solid green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  justify-content: start;
 }
 nav a {
   margin: 0 10px;
 }
 main {
-  width: 80%;
+  width: 100%;
   border: 1px solid red;
-  margin: 20px auto;
+}
+#app{
+  display: flex;
+  justify-content: start;
 }
 </style>
