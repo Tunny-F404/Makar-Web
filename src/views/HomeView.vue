@@ -49,6 +49,18 @@
                 </el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
+            <!-- 测试栏 -->
+            <el-sub-menu index="4">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>测试栏</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="4-1">
+                  <RouterLink to="/text">测试1</RouterLink>
+                </el-menu-item>
+              </el-menu-item-group>
+            </el-sub-menu>
           </el-menu>
         </el-col>
       </el-row>

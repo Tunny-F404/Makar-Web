@@ -5,7 +5,6 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   base: '/Makar-Web/',
   plugins: [
@@ -21,6 +20,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+    },
+    server: {
+      fs: {
+        strict: false, // 允许访问所有文件
+      },
+    },
   }
 })

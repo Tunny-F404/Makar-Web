@@ -18,6 +18,11 @@ const router = createRouter({
           name: 'center-css',
           component:() => import('@/views/Css/Center-css.vue'),
         },
+        {
+          path: '/text',
+          name: 'text',
+          component:() => import('@/views/Text-file.vue'),
+        },
       ],
     },
   ]
