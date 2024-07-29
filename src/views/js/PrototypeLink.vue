@@ -17,7 +17,7 @@ export default {
   },
   async mounted(){
     try {
-      const getMd = await axios.get('/public/blog-md/Js/PrototypeLink.md');
+      const getMd = await axios.get('/blog-md/Js/PrototypeLink.md');
       console.log('文件内容:', getMd.data);
       this.mdData = marked(getMd.data);
     } catch (error) {
