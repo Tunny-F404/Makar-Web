@@ -22,7 +22,7 @@ Ok，这是它的基本概念，接下来我们来介绍下它的基本模型
 ## 函数模型
 ### 创建函数
 
-![基础模块](/makar-web/public/picture/basic-module.png)
+![基础模块](/picture/basic-module.png)
 上图中有两个模块（青色和紫色），他们分别是function和object，我们在创建函数的时候实际创建的是青色的function，紫色的object是JavaScript为这个函数创建一个与函数相关联的特殊对象
 ###### 这个对象是用于存储该函数创建的对象实例的共享属性和方法的
 同样，我们可以看见图上有prototype、constructor、__proto__三个属性，你可以把他们理解为有特殊指向的指针，function和object互相连接，是不是很像数据结构中的链表，下面这个例子可以很好的帮你理解这个概念

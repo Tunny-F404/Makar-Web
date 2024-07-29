@@ -45,7 +45,7 @@
               </template>
               <el-menu-item-group>
                 <el-menu-item index="3-1">
-                  <RouterLink to="/js/prototype-link">原型链</RouterLink>
+                  <RouterLink to="/prototype-link">原型链</RouterLink>
                 </el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
@@ -67,7 +67,6 @@
     </nav>
     <main>
       <RouterView />
-      <h3>施工中···，敬请期待···  =)</h3>
     </main>
   </div>
 </template>

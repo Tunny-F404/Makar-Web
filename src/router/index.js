@@ -9,7 +9,7 @@ const router = createRouter({
       component: () => import('@/views/HomeView.vue'),
       children:[
         {
-          path: '/js/prototype-link',
+          path: '/prototype-link',
           name: 'prototype-link',
           component:() => import('@/views/js/PrototypeLink.vue'),
         },
@@ -21,7 +21,7 @@ const router = createRouter({
         {
           path: '/text',
           name: 'text',
-          component:() => import('@/views/Text-file.vue'),
+          component:() => import('@/views/js/Text-file.vue'),
         },
       ],
     },

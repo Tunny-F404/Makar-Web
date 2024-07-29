@@ -1,28 +1,31 @@
 <template>
   <h3>原型链</h3>
-  <div v-html="mdData"></div>
+  <div v-html="mdDataLink"></div>
 </template>
 
 <script>
 import axios from 'axios';
 import { marked } from 'marked';
-import {  } from "module";
-
 
 export default {
   data() {
     return {
-      mdData:'',
+      mdDataLink: '',
     };
   },
-  async mounted(){
+  async mounted() {
     try {
-      const getMd = await axios.get('/blog-md/Js/PrototypeLink.md');
+      const getMd = await axios.get('blog-md/md-js/prototype-link.md');
       console.log('文件内容:', getMd.data);
-      this.mdData = marked(getMd.data);
+      this.mdDataLink = marked(getMd.data);
     } catch (error) {
-      console.log('text-file请求错误');
-      console.log('请求路径:', '/Makar-Web/blog-md/Js/TextMd.md'); 
+      console.error('Markdown 文件请求错误:', error);
+      console.log('请求路径:', 'blog-md/md-js/prototype-link.md');
+      if (error.response) {
+        console.log('响应状态码:', error.response.status);
+        console.log('响应头:', error.response.headers);
+        console.log('响应内容:', error.response.data);
+      }
     }
   }
 };
