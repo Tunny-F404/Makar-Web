@@ -85,7 +85,7 @@ const handleClose = (key: string, keyPath: string[]) => {
 <style scoped>
 nav {
   width: 300rpx;
-  border: 1px solid green;
+  border: 1px solid black;
   display: grid;
   justify-content: start;
 }
@@ -94,7 +94,7 @@ nav a {
 }
 main {
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid black;
 }
 #app{
   display: flex;
