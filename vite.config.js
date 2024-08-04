@@ -11,11 +11,11 @@ export default defineConfig({
     vue(),
     //element-plus的按需导入插件
     AutoImport({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver()]
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
-    }),
+      resolvers: [ElementPlusResolver()]
+    })
   ],
   resolve: {
     alias: {
@@ -23,8 +23,8 @@ export default defineConfig({
     },
     server: {
       fs: {
-        strict: false, // 允许访问所有文件
-      },
-    },
+        strict: false // 允许访问所有文件
+      }
+    }
   }
 })

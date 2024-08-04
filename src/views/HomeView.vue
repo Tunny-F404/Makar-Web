@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <nav>
-      
       <el-row class="tac">
         <el-col :span="24">
           <h3 class="mb-2">
-            <RouterLink to="/">home</RouterLink>
+            <RouterLink class="home-div" to="/">
+              <h1>HOME</h1>
+            </RouterLink>
           </h3>
           <el-menu
             default-active="2"
@@ -13,16 +14,18 @@
             @open="handleOpen"
             @close="handleClose"
           >
-          <!-- HTML菜单 -->
+            <!-- HTML菜单 -->
             <el-sub-menu index="1">
               <template #title>
                 <el-icon><location /></el-icon>
-                <span>HTML</span>
+                <span>GitHub</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">
-                  <p>施工中···</p>
-                </el-menu-item>
+                <RouterLink class="rl" to="/github-pages">
+                  <el-menu-item index="1-1">
+                    <p>Github Pages</p>
+                  </el-menu-item>
+                </RouterLink>
               </el-menu-item-group>
             </el-sub-menu>
             <!-- CSS菜单 -->
@@ -44,9 +47,16 @@
                 <span>JavaScript</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="3-1">
-                  <RouterLink to="/prototype-link">原型链</RouterLink>
-                </el-menu-item>
+                <RouterLink class="rl" to="/prototype-link">
+                  <el-menu-item index="3-1">
+                    <p>原型链</p>
+                  </el-menu-item>
+                </RouterLink>
+                <RouterLink class="rl" to="/up-down-text">
+                  <el-menu-item index="3-2">
+                    <p>全局执行上下文</p>
+                  </el-menu-item>
+                </RouterLink>
               </el-menu-item-group>
             </el-sub-menu>
             <!-- 测试栏 -->
@@ -57,7 +67,7 @@
               </template>
               <el-menu-item-group>
                 <el-menu-item index="4-1">
-                  <RouterLink to="/text">测试1</RouterLink>
+                  <RouterLink class="rl" to="/text">测试一</RouterLink>
                 </el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
@@ -72,31 +82,63 @@
 </template>
 
 <script lang="ts" setup>
-import { RouterLink,RouterView } from 'vue-router';
+import { RouterLink, RouterView } from 'vue-router'
 
 const handleOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
-};
+}
 const handleClose = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
-};
+}
 </script>
 
 <style scoped>
+h3 {
+  border: 1px solid green;
+  padding: 0;
+  margin: 0;
+}
+.home-div,
+h1 {
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid black;
+  height: 100%;
+}
+.el-menu-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.rl,
+p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-decoration: none;
+  color: gray;
+  width: 100%;
+  justify-content: start;
+}
 nav {
   width: 300rpx;
   border: 1px solid black;
   display: grid;
   justify-content: start;
 }
-nav a {
+nav,
+a {
   margin: 0 10px;
 }
 main {
   width: 100%;
   border: 1px solid black;
 }
-#app{
+#app {
   display: flex;
   justify-content: start;
 }
