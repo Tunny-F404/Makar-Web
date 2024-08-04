@@ -1,23 +1,33 @@
 # 吴运宇
 
-男 | 23岁 | 2年经验 | 本科 | 18715630190 | wu.front.end.dev@gmail.com | 微信 ：MakarF200 | 个人网站：https://tunny-f404.github.io/Makar-Web/
-前端开发工程师 ，擅长使用Vue构建高性能和用户友好的web应用 ，了解MySQL、App、小程序开发
+男 | 23岁 | 2年经验 | 本科 | 18715630190 | wufrontenddev@gmailcom | 微信 ：MakarF200 | 个人网站：https://tunny-f404githubio/Makar-Web/
+
+前端开发工程师 ｜ 擅长使用Vue构建高性能和用户友好的web应用 ｜ 了解MySQL、App、小程序开发
 
 # 教育经历：
 
 2019/09 - 2023/06 ｜ 蚌埠学院 ｜ 机械设计制造及其自动化专业
+
 成绩：Top20%
+
 荣誉：曾获得过国家奖项一项；曾获得过多项省级、校级奖项荣誉；拥有实用新型专项一项；
 
 # 项目经历：
 
 ### 工程化Web管理系统（To-B） ｜ 职位：Web开发兼前端项目管理
 
-GitHub仓库：https://github.com/Tunny-F404/01-project/tree/v1.0.0
-项目展示地址：http://www.029tec.com
+GitHub仓库：https://githubcom/Tunny-F404/01-project/tree/v100
 
-项目介绍：该项目是一个综合性公司内部管理解决方案，专为国内离散制造业的中小企业设计，旨在通过数字化手段优化生产流程，提升资源配置和生产运营效率。
-技术栈: Axios（用于发送HTTP请求）｜ Apipost、MockJS ｜ Vue-Router ｜ ElementUI、Webpack
+项目展示地址：http://www029teccom
+
+项目介绍：
+
+该项目是一个综合性公司内部管理解决方案，专为国内离散制造业的中小企业设计，旨在通过数字化手段优化生产流程，提升资源配置和生产运营效率。
+
+技术栈:Axios｜ Apipost、MockJS ｜ Vue-Router ｜ ElementUI、Webpack
+
+构建工具:Vite ｜ 风格与质量:ESLint,Prettier ｜ 测试框架:Vitest ｜ 其他工具：阿里云效、服务器
+
 工作内容:
 
 1. 参与或审查API设计，以确保其符合前端需求。
@@ -32,11 +42,17 @@ GitHub仓库：https://github.com/Tunny-F404/01-project/tree/v1.0.0
 
 ### 个人网站 ｜ 全栈开发
 
-GitHub仓库：https://github.com/Tunny-F404/Makar-Web
-网站地址：https://tunny-f404.github.io/Makar-Web
+GitHub仓库：https://githubcom/Tunny-F404/Makar-Web
+网站地址：https://tunny-f404githubio/Makar-Web
 
-项目介绍：该项目是本人的一个blog和项目介绍网站，上面会展示我个人信息、项目文章、博客等。
-技术栈：前端框架:Vue3 ｜ 状态管理:Pinia ｜ 路由管理:VueRouter ｜ UI 组件库:Element-Plus ｜ md支持:Marked
+项目介绍：
+
+该项目是本人的一个blog和项目介绍网站，上面会展示我个人信息、项目文章、博客等。
+
+技术栈：
+
+前端框架:Vue3 ｜ 状态管理:Pinia ｜ 路由管理:VueRouter ｜ UI 组件库:Element-Plus ｜ md支持:Marked
+
 构建工具:Vite ｜ 风格与质量:ESLint,Prettier ｜ 测试框架:Vitest ｜ 其他工具：GitHub pages
 
 1. 使用 Vue 3 框架进行前端开发，实现了响应式布局和动态交互功能。
@@ -51,23 +67,32 @@ GitHub仓库：https://github.com/Tunny-F404/Makar-Web
 
 # 工作经历：
 
-2023/05 - 2024/07 ｜ 中鼎控股股份有限公司 ｜ IT质量管理工程师
-问题解决能力：前端开发中调试和优化代码；前后端分离的开发模式下，确保前后端数据的顺畅交互；识别用户体验中的痛点，并通过优化页面布局，提升交互流畅度或引入新的交互元素来提升用户体验
-项目管理能力：规划前端开发的各个阶段，确保团队成员之间的协作顺畅，以及开发进度的可控；评估各种前端技术栈的优缺点，并结合项目需求进行技术选型。确保技术栈的可持续性和可扩展性
-沟通协调能力：与多个部门进行有效沟通，协调解决质量、开发、设计等问题
+#### 2023/05 - 2024/07 ｜ 中鼎控股股份有限公司 ｜ 前端质量管理工程师
 
-2021/07 - 2021/09 ｜ 科大讯飞 ｜ 嵌入式开发工程师
 工作内容：
+
+问题解决：前端开发中调试和优化代码；前后端分离的开发模式下，确保前后端数据的顺畅交互；识别用户体验中的痛点，并通过优化页面布局，提升交互流畅度或引入新的交互元素来提升用户体验
+
+项目管理：规划前端开发的各个阶段，确保团队成员之间的协作顺畅，以及开发进度的可控；评估各种前端技术栈的优缺点，并结合项目需求进行技术选型。确保技术栈的可持续性和可扩展性
+
+沟通协调：与多个部门进行有效沟通，协调解决质量、开发、设计等问题
+
+#### 2021/07 - 2021/09 ｜ 科大讯飞 ｜ 嵌入式开发工程师 ｜ 在校实习
+
+工作内容：
+
 参与科大讯飞语音交互SDK的集成开发工作，了解SDK的功能和使用方法
+
 了解项目开发过程中的分工和协作方式
+
 参与并负责构建全面的测试用例并执行严格的测试计划，全面评估语音助手的功能、性能和稳定性
 
 # 专业技能：
 
-. 基础语言：熟悉HTML、CSS、JavaScript、TypeScript，熟悉HTML5、CSS3、ES5/6新特性
-. 框架与库：熟悉Vue.js，熟悉Vue-Router、Vuex、Pinia，Element、Element+、Antd、Vant等UI组件库
-. 开发工具：熟练使用Git、Webpack、Vite等开发工具，熟悉Chrome、Firefox、Edge等浏览器调试工具
-. 前后端通讯：熟悉AxiosHTTP通讯中间件，熟悉HTTP协议。
-. 项目管理：具有良好的项目管理和沟通协调能力
-. 安全与优化：了解Web安全攻击及其防御措施，擅长代码优化和性能提升
-· 其他技能：了解数据结构与算法、设计模式、MySQL数据库、C、C++、SpringBoot、SpringMVC框架、Web3
+1. 基础语言：熟悉HTML、CSS、JavaScript、TypeScript，熟悉HTML5、CSS3、ES5/6新特性
+2. 框架与库：熟悉Vuejs，熟悉Vue-Router、Vuex、Pinia，Element、Element+、Antd、Vant等UI组件库
+3. 开发工具：熟练使用Git、Webpack、Vite等开发工具，熟悉Chrome、Firefox、Edge等浏览器调试工具
+4. 前后端通讯：熟悉AxiosHTTP通讯中间件，熟悉HTTP协议。
+5. 项目管理：具有良好的项目管理和沟通协调能力
+6. 安全与优化：了解Web安全攻击及其防御措施，擅长代码优化和性能提升
+7. 其他技能：了解数据结构与算法、设计模式、MySQL数据库、C、C++、SpringBoot、SpringMVC框架、Web3

@@ -9,7 +9,7 @@
   <p>还有很多的项目要做，很多的坑要填，很多的笔记要写，很多的····</p>
 </template>
 <script></script>
-<style>
+<style scoped>
 .rl {
   text-decoration: none;
   color: black;

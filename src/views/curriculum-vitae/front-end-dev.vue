@@ -34,7 +34,8 @@ export default {
 </script>
 <style module>
 @import '@/assets/css-file/bluetex.css';
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 </style>
