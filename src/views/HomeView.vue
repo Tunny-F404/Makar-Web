@@ -14,7 +14,7 @@
             @open="handleOpen"
             @close="handleClose"
           >
-            <!-- HTML菜单 -->
+            <!-- GitHub菜单 -->
             <el-sub-menu index="1">
               <template #title>
                 <el-icon><location /></el-icon>
@@ -24,6 +24,13 @@
                 <RouterLink class="rl" to="/github-pages">
                   <el-menu-item index="1-1">
                     <p>Github Pages</p>
+                  </el-menu-item>
+                </RouterLink>
+              </el-menu-item-group>
+              <el-menu-item-group>
+                <RouterLink class="rl" to="/static-web">
+                  <el-menu-item index="1-2">
+                    <p>静态网页</p>
                   </el-menu-item>
                 </RouterLink>
               </el-menu-item-group>
@@ -76,7 +83,7 @@
       </el-row>
     </nav>
     <main>
-      <RouterView />
+      <RouterView class="rv" />
     </main>
   </div>
 </template>
@@ -94,7 +101,7 @@ const handleClose = (key: string, keyPath: string[]) => {
 
 <style scoped>
 h3 {
-  border: 1px solid green;
+  border: 1px solid black;
   padding: 0;
   margin: 0;
 }

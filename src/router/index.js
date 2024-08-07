@@ -18,15 +18,15 @@ const router = createRouter({
           name: 'prototype-link',
           component: () => import('@/views/js/prototype-link.vue')
         },
-        {
-          path: '/css/center-css',
-          name: 'center-css',
-          component: () => import('@/views/css/center-css.vue')
-        },
+        // {
+        //   path: '/css/center-css',
+        //   name: 'center-css',
+        //   component: () => import('@/views/css/center-css.vue')
+        // },
         {
           path: '/text',
           name: 'text',
-          component: () => import('@/views/js/text-file.vue')
+          component: () => import('@/views/text-file.vue')
         },
         {
           path: '/github-pages',
@@ -37,6 +37,16 @@ const router = createRouter({
           path: '/front-end-dev',
           name: 'front-end-dev',
           component: () => import('@/views/curriculum-vitae/front-end-dev.vue')
+        },
+        {
+          path: '/static-web',
+          name: 'static-web',
+          component: () => import('@/views/github/static-web.vue')
+        },
+        {
+          path: '/up-down-text',
+          name: 'up-down-text',
+          component: () => import('@/views/js/up-down-text.vue')
         }
       ]
     }
