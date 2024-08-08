@@ -18,7 +18,7 @@
 
 GitHub仓库：https://githubcom/Tunny-F404/01-project/tree/v100
 
-项目展示地址：http://www029teccom
+项目展示地址：http://www.029tec.com
 
 项目介绍：
 
@@ -43,6 +43,7 @@ GitHub仓库：https://githubcom/Tunny-F404/01-project/tree/v100
 ### 个人网站 ｜ 全栈开发
 
 GitHub仓库：https://githubcom/Tunny-F404/Makar-Web
+
 网站地址：https://tunny-f404githubio/Makar-Web
 
 项目介绍：

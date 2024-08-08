@@ -44,9 +44,14 @@ const router = createRouter({
           component: () => import('@/views/github/static-web.vue')
         },
         {
-          path: '/up-down-text',
-          name: 'up-down-text',
-          component: () => import('@/views/js/up-down-text.vue')
+          path: '/execution-context',
+          name: 'execution-context',
+          component: () => import('@/views/js/execution-context.vue')
+        },
+        {
+          path: '/execution-context-stack',
+          name: 'execution-context-stack',
+          component: () => import('@/views/js/execution-context-stack.vue')
         }
       ]
     }

@@ -59,9 +59,14 @@
                     <p>原型链</p>
                   </el-menu-item>
                 </RouterLink>
-                <RouterLink class="rl" to="/up-down-text">
+                <RouterLink class="rl" to="/execution-context-stack">
                   <el-menu-item index="3-2">
-                    <p>全局执行上下文</p>
+                    <p>执行上下文栈</p>
+                  </el-menu-item>
+                </RouterLink>
+                <RouterLink class="rl" to="/execution-context">
+                  <el-menu-item index="3-3">
+                    <p>执行上下文</p>
                   </el-menu-item>
                 </RouterLink>
               </el-menu-item-group>

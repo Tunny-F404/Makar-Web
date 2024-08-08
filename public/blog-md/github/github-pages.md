@@ -47,8 +47,11 @@ ok,到这里GitHub上面的部署已经基本完成了，剩下的就是在本�
 "deploy": "npm run build && push-dir --dir=dist --branch=gh-pages --cleanup"
 ```
 
+<!-- 添加一条横线 -->
+<div style='border-top: 1px solid black;'></div>
+
 ## 拓展
 
 [GitHub pages官方文档](https://docs.github.com/zh/pages/quickstart)
 
-[什么是静态网页](/src/views/github/static-web.vue)
+[什么是静态网页](/Makar-Web/static-web)
