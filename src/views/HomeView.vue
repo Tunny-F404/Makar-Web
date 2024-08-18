@@ -42,9 +42,16 @@
                 <span>CSS</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="2-1">
-                  <p>施工中···</p>
-                </el-menu-item>
+                <RouterLink class="rl" to="/center-css">
+                  <el-menu-item index="2-1">
+                    <p>CSS居中</p>
+                  </el-menu-item>
+                </RouterLink>
+                <RouterLink class="rl" to="/css::">
+                  <el-menu-item index="2-2">
+                    <p>CSS伪元素</p>
+                  </el-menu-item>
+                </RouterLink>
               </el-menu-item-group>
             </el-sub-menu>
             <!-- JS菜单 -->
@@ -71,8 +78,19 @@
                 </RouterLink>
               </el-menu-item-group>
             </el-sub-menu>
-            <!-- 测试栏 -->
             <el-sub-menu index="4">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>TypeScript</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="4-1">
+                  <RouterLink class="rl" to="/ts-base">TS基础</RouterLink>
+                </el-menu-item>
+              </el-menu-item-group>
+            </el-sub-menu>
+            <!-- 测试栏 -->
+            <el-sub-menu index="5">
               <template #title>
                 <el-icon><location /></el-icon>
                 <span>测试栏</span>
@@ -153,5 +171,6 @@ main {
 #app {
   display: flex;
   justify-content: start;
+  margin-top: 10px;
 }
 </style>

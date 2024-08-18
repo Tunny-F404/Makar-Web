@@ -1,6 +1,6 @@
 # 吴运宇
 
-男 | 23岁 | 2年经验 | 本科 | 18715630190 | wufrontenddev@gmailcom | 微信 ：MakarF200 | 个人网站：https://tunny-f404githubio/Makar-Web/
+男 | 23岁 | 2年经验 | 本科 | 18715630190 | wufrontenddev@gmailcom | 微信 ：MakarF200 | 个人网站：https://tunny-f404.github.io/Makar-Web/
 
 前端开发工程师 ｜ 擅长使用Vue构建高性能和用户友好的web应用 ｜ 了解MySQL、App、小程序开发
 
@@ -16,7 +16,7 @@
 
 ### 工程化Web管理系统（To-B） ｜ 职位：Web开发兼前端项目管理
 
-GitHub仓库：https://githubcom/Tunny-F404/01-project/tree/v100
+GitHub仓库：https://github.com/Tunny-F404/01-project.git
 
 项目展示地址：http://www.029tec.com
 
@@ -42,9 +42,9 @@ GitHub仓库：https://githubcom/Tunny-F404/01-project/tree/v100
 
 ### 个人网站 ｜ 全栈开发
 
-GitHub仓库：https://githubcom/Tunny-F404/Makar-Web
+GitHub仓库：https://github.com/Tunny-F404/Makar-Web
 
-网站地址：https://tunny-f404githubio/Makar-Web
+网站地址：https://tunny-f404.github.io/Makar-Web
 
 项目介绍：
 
