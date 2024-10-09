@@ -24,6 +24,11 @@ const router = createRouter({
           component: () => import('@/views/css/center-css.vue')
         },
         {
+          path: '/center-css-one',
+          name: 'center-css',
+          component: () => import('@/views/css/center-css.vue')
+        },
+        {
           path: '/text',
           name: 'text',
           component: () => import('@/views/text-file.vue')
