@@ -24,11 +24,6 @@ const router = createRouter({
           component: () => import('@/views/css/center-css.vue')
         },
         {
-          path: '/center-css-one',
-          name: 'center-css',
-          component: () => import('@/views/css/center-css.vue')
-        },
-        {
           path: '/text',
           name: 'text',
           component: () => import('@/views/text-file.vue')
@@ -57,7 +52,12 @@ const router = createRouter({
           path: '/execution-context-stack',
           name: 'execution-context-stack',
           component: () => import('@/views/js/execution-context-stack.vue')
-        }
+        },
+        {
+          path: '/screen-recording',
+          name: 'screen-recording',
+          component: () => import('@/views/other/screen-recording.vue')
+        },
       ]
     }
   ]
