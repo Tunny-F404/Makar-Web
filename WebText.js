@@ -145,7 +145,8 @@ var back = "funfufnufn";
 console.log("bdbdb: ${back}");
 
 */
-
+// 下面是js第二单元的测试
+/*
 // Task 1: Build a function-based console log message generator
 function consoleStyler(color,background,fontSize,txt) {
   let message = "%c" + txt;
@@ -183,3 +184,178 @@ function styleAndCelebrate(color,background,fontSize,txt,reason) {
 }
 // Call styleAndCelebrate
 styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
+*/
+
+//下面是oop的接收参数的测试
+/*
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  calculateArea() {
+    return this.width * this.height;
+  }
+}
+
+const rectangle = new Rectangle(5, 10);
+const area = rectangle.calculateArea();
+
+console.log(area); // 输出 50
+
+class train {
+  constructor(a,b,c) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+  }
+  pri() {
+    console.log(this.a,this.b,this.c);
+  }
+}
+const tomasi = new train(88,99,77);
+console.log(tomasi,typeof(tomasi));
+*/
+//下面是js第三单元的说明和测试
+//说明
+/*
+# 实验说明：面向对象编程
+> ### **提示：开始之前**
+> #### **要并排查看代码和说明**，请在 VSCode 工具栏中选择以下内容：
+> - 查看 -> 编辑器布局 -> 两
+> - 要在预览模式下查看此文件，请右键单击此 README.md 文件并选择“打开预览”
+> - 在代码树中选择您的代码文件，它将在新的 VSCode 选项卡中打开它。
+> - 将您的评估代码文件拖到第二列。
+> - 做得好！您现在可以同时查看说明和代码。
+> - 有关于使用 VSCode 的问题？请在此处查看我们的支持资源：
+> [Coursera 上的 Visual Studio Code](https://www.coursera.org/learn/programming-with-javascript/supplement/roMvE/visual-studio-code-on-coursera)
+> #### **运行 JavaScript 代码**
+> - 选择 JavaScript 文件
+> - 选择 V​​SCode 右上角工具栏中的“运行代码”按钮。
+> 例如：它看起来像一个三角形的“播放”按钮。
+
+## 任务 1：编写 Person 类
+编写 Person 类，构造函数中有三个参数：name、age 和 energy。
+在 Person 类中设置默认参数，如下所示：
+```
+name = "Tom"
+age = 20
+energy = 100
+```
+在 `Person` 类中编写两个方法。将这些方法命名为 `sleep()` 和 `doSomethingFun()`。
+`sleep()` 方法应采用现有的能量水平并将其增加 10。
+doSomethingFun() 方法应采用现有的能量水平并将其减少 10。
+## 任务 2：编写 Worker 类
+编写一个继承自 `Person` 类的子类，并将其命名为 `Worker`。
+`Worker` 类在构造函数中有两个附加参数：
+- xp（表示“经验值”）
+- hourlyWage。
+这些属性设置为以下默认值：
+```
+xp = 0
+hourlyWage = 10
+```
+`Worker` 类具有其超类的所有参数和方法。
+此外，它还具有 `goToWork()` 方法，该方法每次运行时都会将 `xp` 属性的值增加 10。
+## 任务 3：编写实习对象
+在函数中实例化 `Worker` 类以编写新的实习对象。
+应具有以下特征：
+```
+姓名：Bob
+年龄：21
+能量：110
+xp：0
+hourlyWage：10
+```
+在实习对象上运行 `goToWork()` 方法。然后 `return` 实习对象。
+## 任务 4：编写经理对象
+在经理函数中实例化 `Worker` 类以编写新的 `manager` 对象。
+管理器对象应具有以下特征：
+```
+名称：Alice
+年龄：30
+能量：120
+xp：100
+hourlyWage：30
+```
+*/
+// task one
+/*
+class Person {
+  constructor(name = 'Tom',age = 20,energy = 100) {
+    this.name = name;
+    this.age = age;
+    this.energy = energy;
+  }
+  sleep() {
+    this.energy += 10;
+  }
+  doSomethingFun(){
+    this.energy -= 10;
+  }
+}
+// task two
+class Worker extends Person {
+  constructor(name,age,energy,xp = 0,hourlyWage = 10) {
+    super(name,age,energy)
+    this.xp = xp;
+    this.hourlyWage = hourlyWage;
+  }
+  goToWork(){
+    this.xp += 10;
+  }
+}
+// task three
+function intern() {
+  const newWorker = new Worker("Blob",21,110,0,10);
+  newWorker.goToWork();
+  return newWorker;
+}
+// task four
+function manager() {
+  const newWorker = new Worker("Alice",30,120,100,30);
+  newWorker.doSomethingFun();
+  return newWorker;
+}
+let val = `hello
+world
+?
+`
+console.log(val);
+*/
+//下面是第四单元的测试
+// Task 1
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+function logDairy() {
+  for (const arr of dairy) {
+    console.log(arr);
+  }
+}
+logDairy()
+// Task 2
+const animal = {
+  canJump:true
+}
+const bird = Object.create(animal);
+bird.canFly = true;
+bird.hasFeathers = true;
+
+function birdCan() {
+  const dic_key = Object.keys(bird);
+  for (const i of dic_key) {
+    console.log(`${i}: ${bird[i]}`);
+  }
+}
+birdCan()
+//Task 3
+function animalCan() {
+  for (const key in bird) {
+    console.log(`${key}: ${bird[key]}`);
+  }
+}
+animalCan()
+
+const [one,two,...three] = dairy;
+console.log(one,two,three);
+
