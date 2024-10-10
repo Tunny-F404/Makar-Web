@@ -14,7 +14,7 @@
 
 [![uni-im文档截图](https://iili.io/29xZFg2.png)](https://doc.dcloud.net.cn/uniCloud/uni-im.html)
 
-   这是报错 ( 这报错一点错误信息都没有(´。＿。｀))
+这是报错 ( 这报错一点错误信息都没有(´。＿。｀))
 
 ![上传失败报错](https://iili.io/29xZ2f4.png)
 
@@ -24,7 +24,7 @@
 
 2. 右击
 
-3.选择上传部署
+3. 选择上传部署
 
 ![解决方法](https://iili.io/29xZfJS.png)
 
