@@ -104,14 +104,28 @@
                 </RouterLink>
               </el-menu-item-group>
             </el-sub-menu>
-            <!-- 测试栏 -->
+            <!-- dcloud菜单 -->
             <el-sub-menu index="6">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>DCloud</span>
+              </template>
+              <el-menu-item-group>
+                <RouterLink class="rl" to="/dcloud-uni-im-public-modules">
+                  <el-menu-item index="6-1">
+                    <p>uni-im</p>
+                  </el-menu-item>
+                </RouterLink>
+              </el-menu-item-group>
+            </el-sub-menu>
+            <!-- 测试栏 -->
+            <el-sub-menu index="101">
               <template #title>
                 <el-icon><location /></el-icon>
                 <span>测试栏</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="4-1">
+                <el-menu-item index="101-1">
                   <RouterLink class="rl" to="/text">测试一</RouterLink>
                 </el-menu-item>
               </el-menu-item-group>

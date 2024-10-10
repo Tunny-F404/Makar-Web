@@ -58,6 +58,11 @@ const router = createRouter({
           name: 'screen-recording',
           component: () => import('@/views/other/screen-recording.vue')
         },
+        {
+          path: '/dcloud-uni-im-public-modules',
+          name: 'dcloud-uni-im-Public-modules',
+          component: () => import('@/views/dcloud/uni-im-public-modules.vue')
+        }
       ]
     }
   ]
