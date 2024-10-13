@@ -90,30 +90,44 @@
                 </el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
-            <!-- 其他菜单 -->
-            <el-sub-menu index="5">
-              <template #title>
-                <el-icon><location /></el-icon>
-                <span>其他</span>
-              </template>
-              <el-menu-item-group>
-                <RouterLink class="rl" to="/screen-recording">
-                  <el-menu-item index="5-1">
-                    <p>录屏软件</p>
-                  </el-menu-item>
-                </RouterLink>
-              </el-menu-item-group>
-            </el-sub-menu>
             <!-- dcloud菜单 -->
-            <el-sub-menu index="6">
+            <el-sub-menu index="5">
               <template #title>
                 <el-icon><location /></el-icon>
                 <span>DCloud</span>
               </template>
               <el-menu-item-group>
                 <RouterLink class="rl" to="/dcloud-uni-im-public-modules">
-                  <el-menu-item index="6-1">
+                  <el-menu-item index="5-1">
                     <p>uni-im</p>
+                  </el-menu-item>
+                </RouterLink>
+              </el-menu-item-group>
+            </el-sub-menu>
+            <!-- git菜单 -->
+            <el-sub-menu index="6">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>Git</span>
+              </template>
+              <el-menu-item-group>
+                <RouterLink class="rl" to="/dcloud-uni-im-public-modules">
+                  <el-menu-item index="6-1">
+                    <p>Git基本操作</p>
+                  </el-menu-item>
+                </RouterLink>
+              </el-menu-item-group>
+            </el-sub-menu>
+            <!-- 其他菜单 -->
+            <el-sub-menu index="100">
+              <template #title>
+                <el-icon><location /></el-icon>
+                <span>其他</span>
+              </template>
+              <el-menu-item-group>
+                <RouterLink class="rl" to="/screen-recording">
+                  <el-menu-item index="100-1">
+                    <p>录屏软件</p>
                   </el-menu-item>
                 </RouterLink>
               </el-menu-item-group>
