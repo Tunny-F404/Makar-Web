@@ -60,8 +60,13 @@ const router = createRouter({
         },
         {
           path: '/dcloud-uni-im-public-modules',
-          name: 'dcloud-uni-im-Public-modules',
+          name: 'dcloud-uni-im-public-modules',
           component: () => import('@/views/dcloud/uni-im-public-modules.vue')
+        },
+        {
+          path: '/git-base',
+          name: 'git-base',
+          component: () => import('@/views/git/git-base.vue')
         }
       ]
     }
