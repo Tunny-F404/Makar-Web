@@ -1,0 +1,1 @@
+import{a3 as t,e as s,f as c,G as n,h as e}from"./index-CxShBBkz.js";const a={},o=e("p",null,"这是静态网页",-1),r=e("p",null,"施工中···",-1);function _(l,f){return s(),c(n,null,[o,r],64)}const i=t(a,[["render",_]]);export{i as default};
