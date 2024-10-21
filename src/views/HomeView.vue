@@ -111,7 +111,7 @@
                 <span>Git</span>
               </template>
               <el-menu-item-group>
-                <RouterLink class="rl" to="/dcloud-uni-im-public-modules">
+                <RouterLink class="rl" to="/git-base">
                   <el-menu-item index="6-1">
                     <p>Git基本操作</p>
                   </el-menu-item>
