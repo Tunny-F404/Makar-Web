@@ -1,6 +1,6 @@
 # 吴运宇
 
-男 | 23岁 | 2年经验 | 本科 | 18715630190 | wufrontenddev@gmailcom | 微信 ：MakarF200 | 个人网站：https://tunny-f404.github.io/Makar-Web/
+男 | 23岁 | 2年经验 | 本科 | 18715630190 | wu.front.end.dev@gmail.com | 微信 ：MakarF200 | 个人网站：https://tunny-f404.github.io/Makar-Web/
 
 前端开发工程师 ｜ 擅长使用Vue构建高性能和用户友好的web应用 ｜ 了解MySQL、App、小程序开发
 
@@ -68,7 +68,7 @@ GitHub仓库：https://github.com/Tunny-F404/Makar-Web
 
 # 工作经历：
 
-#### 2023/05 - 2024/07 ｜ 中鼎控股股份有限公司 ｜ 前端质量管理工程师
+#### 2023/06 - 2024/06 ｜ 中鼎控股股份有限公司 ｜ 前端开发工程师
 
 工作内容：
 
